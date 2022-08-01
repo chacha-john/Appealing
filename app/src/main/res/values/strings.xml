@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Appealing</string>
+    <string name="create_account">Don\'t have an account yet? Sign up <span>here</span></string>
 </resources>
