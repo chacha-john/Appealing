@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "654452747521",
+    "project_id": "appealing-21",
+    "storage_bucket": "appealing-21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654452747521:android:f894f442ca67158e8a7f00",
+        "android_client_info": {
+          "package_name": "com.chachaup.appealing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654452747521-te46cqg6dth1a61u526lpmct5lmfihu6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chachaup.appealing",
+            "certificate_hash": "6fcb0839ea7393cc23c7536600ec147d41459baf"
+          }
+        },
+        {
+          "client_id": "654452747521-n2rmd4fo5mrphmdo6dlfjq9m8qq54oci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFOobscRhh8medNp-sIohUPFbflMcIGhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654452747521-n2rmd4fo5mrphmdo6dlfjq9m8qq54oci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
