@@ -69,7 +69,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutCreateEmail"
+        android:id="@+id/textInputLayoutCreatePassword"
         android:layout_width="326dp"
         android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,12 +83,12 @@
             android:layout_width="326dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_semibold_italic"
-            android:hint="Confirm your password"
+            android:hint="Create your password"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutCreatePassword"
+        android:id="@+id/textInputLayoutConfirmPassword"
         android:layout_width="326dp"
         android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,12 +102,12 @@
             android:layout_width="326dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_semibold_italic"
-            android:hint="Create a password"
+            android:hint="Confirm your password"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutConfirmPassword"
+        android:id="@+id/textInputLayoutCreateEmail"
         android:layout_width="326dp"
         android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
