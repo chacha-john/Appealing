@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Appealing</string>
-    <string name="create_account">Don\'t have an account yet? Sign up <span>here</span></string>
+    <string name="create_account">Don\'t have an account yet? Sign up <a href = "">here</a></string>
+    <string name="login">Already have an account yet? Sign in <a href = "">here</a></string>
 </resources>
