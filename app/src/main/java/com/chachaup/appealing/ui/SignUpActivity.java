@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -51,7 +52,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-            finish();
+//            finish();
         }
         if (v == mCreateAccount){
             createNewUser();
@@ -63,6 +64,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String email = mEmail.getEditText().getText().toString().trim();
         String password = mPassword.getEditText().getText().toString().trim();
         String confirmPassword = mConfirmPassword.getEditText().getText().toString().trim();
+
+        boolean validName = isValidName(name);
+        boolean validEmail = isValidEmail(email);
+        boolean validPassword = isValidPassword(password,confirmPassword);
+
+        if (!validEmail || !validName || !validPassword) return;
 
         mAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(this, task -> {
@@ -95,7 +102,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onStart() {
         super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
+//        mAuth.addAuthStateListener(mAuthListener);
     }
 
     @Override
@@ -105,5 +112,35 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             mAuth.removeAuthStateListener(mAuthListener);
         }
 
+    }
+
+    private boolean isValidEmail(String email){
+        boolean isGoodEmail = (email != null && Patterns.EMAIL_ADDRESS.matcher(email).matches());
+        if (!isGoodEmail){
+            mEmail.getEditText().setError("Please enter a valid email address");
+            return false;
+        }
+        return true;
+    }
+
+    private boolean isValidName(String name){
+        if (name.equals("")){
+            mName.getEditText().setError("Enter a valid name");
+            return false;
+        }
+        return true;
+    }
+
+    private boolean isValidPassword(String password, String confirmPassword){
+        if (password.length() < 6){
+            mPassword.getEditText().setError("Password should be more than six characters");
+            return false;
+        }
+        if (!password.equals(confirmPassword)){
+            mPassword.getEditText().setError("Passwords do not match");
+            mConfirmPassword.getEditText().setError("Passwords do not match");
+            return false;
+        }
+        return true;
     }
 }
