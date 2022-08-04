@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.164" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView3"
+        android:id="@+id/recyclerViewHotSales"
         android:layout_width="407dp"
         android:layout_height="88dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,7 +49,7 @@
         app:layout_constraintVertical_bias="0.365" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
+        android:id="@+id/recyclerViewCategories"
         android:layout_width="407dp"
         android:layout_height="88dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.572" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewInterests"
         android:layout_width="414dp"
         android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -89,11 +89,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/humaaans___plant_1" />
+        app:layout_constraintVertical_bias="0.998"
+        app:srcCompat="@drawable/plant" />
 </androidx.constraintlayout.widget.ConstraintLayout>
