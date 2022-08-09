@@ -2,4 +2,8 @@
     <string name="app_name">Appealing</string>
     <string name="create_account">Don\'t have an account yet? Sign up <a href = "">here</a></string>
     <string name="login">Already have an account yet? Sign in <a href = "">here</a></string>
+    <string name="name_of_book">Name of the book</string>
+    <string name="author_of_book">Author of the book</string>
+    <string name="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quisquam facilis et laudantium placeat aspernatur, accusantium minima ex. Cupiditate rem libero maxime quidem dignissimos repellat quo quasi nostrum pariatur cumque.</string>
+    <string name="price_of_the_book">Ksh. 1800</string>
 </resources>
