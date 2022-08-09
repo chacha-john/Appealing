@@ -6,4 +6,5 @@
     <string name="author_of_book">Author of the book</string>
     <string name="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quisquam facilis et laudantium placeat aspernatur, accusantium minima ex. Cupiditate rem libero maxime quidem dignissimos repellat quo quasi nostrum pariatur cumque.</string>
     <string name="price_of_the_book">Ksh. 1800</string>
+    <string name="error_text">Error text view</string>
 </resources>
