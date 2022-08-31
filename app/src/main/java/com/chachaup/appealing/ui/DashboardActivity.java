@@ -38,12 +38,13 @@ public class DashboardActivity extends AppCompatActivity {
 
         Api client = Client.getClient();
 
-        Call<BookResponse> call = client.getBooks();
-        call.enqueue(new Callback<BookResponse>() {
+        Call<List<BookResponse>> call = client.getBooks();
+        call.enqueue(new Callback<List<BookResponse>>() {
             @Override
-            public void onResponse(Call<BookResponse> call, Response<BookResponse> response) {
-                if (response.isSuccessful()){
+            public void onResponse(Call<List<BookResponse>> call, Response<List<BookResponse>> response) {
+                if (response.isSuccessful()) {
                     //TODO: get list of books as a response
+//                    mBooks = response.body();
                     mAdapter = new BookListAdapter(DashboardActivity.this, mBooks);
                     mHotSales.setAdapter(mAdapter);
                     RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(DashboardActivity.this);
@@ -57,10 +58,11 @@ public class DashboardActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<BookResponse> call, Throwable t) {
+            public void onFailure(Call<List<BookResponse>> call, Throwable t) {
                 showFailureMessage();
-
             }
+
+
         });
     }
     private void showFailureMessage() {
