@@ -32,7 +32,7 @@
 * Android Studio
 * Java
 * Gradle
-* Fork then clone the git repository [here](https://github.com/chacha-john/appealing.git) and the backend repository [here] (https://github.com/chacha-john/appealing-backend.git)
+* Fork then clone the git repository [here](https://github.com/chacha-john/appealing.git) and the backend repository [here](https://github.com/chacha-john/appealing-backend.git)
 * Run the server on IntelliJ IDEA.
 * Run the application on Android Studio locally.
 
