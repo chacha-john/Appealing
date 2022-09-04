@@ -12,7 +12,7 @@
 # Description
 A mobile e-commerce platform for selling shoes made to consume the [Appealing](https://github.com/chacha-john/appealing-backend) API
 
-[Go Back to the top](#chachaup)
+[Go Back to the top](#appealing)
 
 <!-- # Screenshots
 ![Sign up page](/src/main/resources/public/images/luku.png "Landing page")
