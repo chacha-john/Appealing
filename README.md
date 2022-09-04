@@ -10,7 +10,7 @@
 + [Authors Info](#authors-Info)
 
 # Description
-</p>A mobile e-commerce platform for selling shoes made to consume the [Appealing](https://github.com/chacha-john/appealing-backend) API</p>
+A mobile e-commerce platform for selling shoes made to consume the [Appealing](https://github.com/chacha-john/appealing-backend) API
 
 [Go Back to the top](#chachaup)
 
